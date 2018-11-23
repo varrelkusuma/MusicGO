@@ -3,9 +3,23 @@ extends layout
 block content
   .w3-card-4
     h1 Welcome #{user.nickname}
-    img(src=user.picture)
-    h2 User profile
-    p This is the content of <code>req.user</code>.
+    // img(src=user.picture)
+    h2 Welcome to MusicGO!
+    h2 Here, you can get json data for latest music trends!
+    p By clicking one of these buttons, you will automaticaly download json file.
     p Note: <code>_raw</code> and <code>_json</code> properties have been ommited.
     pre
       code #{userProfile}
+
+    a(href="/spotify").w3-bar-item.w3-text-green Spotify
+    .w3-bar-item.w3-text-red Youtube
+    .w3-bar-item.w3-text-orange Last.FM
+
+    nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
+      .w3-bar-item.w3-text-grey Auth0 - NodeJS
+      a(href="/").w3-bar-item.w3-button Hello
+      if locals.user
+        a(href="/user" ).w3-bar-item.w3-button Test
+        a(id="qsLogoutBtn" href="/logout").w3-bar-item.w3-button Log Out
+      else
+        a(id="qsLoginBtn" href="/login").w3-bar-item.w3-button Log In

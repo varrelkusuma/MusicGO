@@ -1,0 +1,19 @@
+{
+  "name": "musicgo",
+  "version": "1.0.0",
+  "description": "Made for Integrative Programming (II3160) API project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varrelkusuma/MusicGO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varrelkusuma/MusicGO/issues"
+  },
+  "homepage": "https://github.com/varrelkusuma/MusicGO#readme"
+}
