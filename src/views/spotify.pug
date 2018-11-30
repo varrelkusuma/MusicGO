@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  .w3-card-4
-    h1 SPOTIFY SUCCESS BRO
+  .ui
+    for data in result //iterate through the results
+      .ui_box
+        .ui_box__inner
+          .event
+            span #{data.event} // here pick out the jSON you require
+          .name
+            span #{data.name}
