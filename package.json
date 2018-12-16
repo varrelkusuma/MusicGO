@@ -1,19 +1,29 @@
 {
-  "name": "musicgo",
-  "version": "1.0.0",
-  "description": "Made for Integrative Programming (II3160) API project",
-  "main": "index.js",
+  "name": "auth0-nodejs-webapp-sample-new-test",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/varrelkusuma/MusicGO.git"
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-auth0": "^1.1.0",
+    "pug": "2.0.3"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/varrelkusuma/MusicGO/issues"
-  },
-  "homepage": "https://github.com/varrelkusuma/MusicGO#readme"
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
