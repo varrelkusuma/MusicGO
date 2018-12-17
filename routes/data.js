@@ -12,7 +12,7 @@ var spotify = require('../data/spotify.json');
   });
 }); */
 
-router.get('/spotify', secured(), function (req, res, next) {
+router.get('/spotify', function (req, res, next) {
   var json = spotify;
   res.send(spotify);
 });
