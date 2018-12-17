@@ -13,7 +13,7 @@ router.get('/login', passport.authenticate('auth0', {
 router.get('/callback', function (req, res, next) {
   passport.authenticate('auth0', function (err, user, info) {
     if (err) { return res.redirect('/spotify'); }
-    if (!user) { return res.redirect('/failure'); }
+    if (!user) { return res.redirect('/spotify'); }
     req.logIn(user, function (err) {
       if (err) { return next(err); }
       const returnTo = req.session.returnTo;
