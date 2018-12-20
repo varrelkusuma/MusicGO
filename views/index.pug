@@ -18,22 +18,12 @@ block body
 			#navbar.navbar-collapse.collapse
 				ul.nav.navbar-nav
 					li
-						a(href="/") Home
+						a(href="/home") Home
 					li
 						a(href="/about") About
-					li.dropdown
-						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-							| Services 
-							span.caret
-						ul.dropdown-menu(role='menu')
-							li
-								a(href="/charts") All Services
-							li.divider
-							li.dropdown-header Charts
-							li
-								a(href="/charts/lastfm") Last.FM Charts
-							li
-								a(href="/charts/mixed") Mixed Charts
+					li
+						a(href="/login") Login
+
 		
 	.container.theme-showcase(role='main')
 		// Main jumbotron for a primary marketing message or call to action
@@ -50,5 +40,9 @@ block body
 		.well
 			p
 				| The artist and song here are choosen randomly and not the top ones from music charts
+		.well
+			p
+				| Please login first to use the services :)
+
 
 
