@@ -43,4 +43,8 @@ router.get('/charts/lastfm', function (req, res, next) {
   res.render('lastfm', { title: 'Last.FM' });
 });
 
+router.get('/charts/mixed', function (req, res, next) {
+  res.render('mixed', { title: 'Mixed' });
+});
+
 module.exports = router;

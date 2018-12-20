@@ -1,19 +1,49 @@
-extends layout
+extends ../_bootstrap
+append styles
+	// Bootstrap theme
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css")
+	// Custom styles for this template
+	link(href='../css/theme.css', rel='stylesheet')
+block body
+	// Fixed navbar
+	nav.navbar.navbar-inverse.navbar-fixed-top
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='#') Bootstrap theme
+			#navbar.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/") Home
+					li
+						a(href="/about") About
+					li.dropdown
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+							| Services 
+							span.caret
+						ul.dropdown-menu(role='menu')
+							li
+								a(href='#') All Services
+							li.divider
+							li.dropdown-header Charts
+							li
+								a(href="/charts/lastfm") Last.FM Charts
+							li
+								a(href="/charts/mixed") Mixed Charts
+		
+	.container.theme-showcase(role='main')
+		// Main jumbotron for a primary marketing message or call to action
+		.jumbotron
+			h1.center MusicGO
+			p
+				| MusicGO is an API to get latest music charts in one-go. Enjoy!
 
-block content
-  .w3-card-4
-    h1 Welcome to MusicGo!
-    // img(src=user.picture)
-    
-    h2 MusicGO is an API made by
-    p Al Varrel Putra Kusuma (18216020)
-    p Information System and Technology 2016
-
-    nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
-      .w3-bar-item.w3-text-grey Auth0 - NodeJS
-      a(href="/").w3-bar-item.w3-button Hello
-      if locals.user
-        a(href="/user" ).w3-bar-item.w3-button Test
-        a(id="qsLogoutBtn" href="/logout").w3-bar-item.w3-button Log Out
-      else
-        a(id="qsLoginBtn" href="/login").w3-bar-item.w3-button Log In
+		.page-header
+			h1 Author
+		.well
+			p
+				| This API is made by Al Varrel Putra Kusuma (18216020) as a project for II3160 Integrative Programming
