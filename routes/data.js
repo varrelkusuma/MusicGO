@@ -47,4 +47,8 @@ router.get('/charts/mixed', function (req, res, next) {
   res.render('mixed', { title: 'Mixed' });
 });
 
+router.get('/charts', function (req, res, next) {
+  res.render('services', { title: 'Services' });
+});
+
 module.exports = router;
