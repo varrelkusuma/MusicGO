@@ -1,0 +1,104 @@
+[
+  {
+    "No": 1,
+    "Artist Name": "Coldplay",
+    "Listener": 5321976,
+    "Stream": 356827093
+  },
+  {
+    "No": 2,
+    "Artist Name": "Linkin Park",
+    "Listener": 3985024,
+    "Stream": 290080453
+  },
+  {
+    "No": 3,
+    "Artist Name": "Taylor Swift",
+    "Listener": 2245673,
+    "Stream": 164055863
+  },
+  {
+    "No": 4,
+    "Artist Name": "Maroon 5",
+    "Listener": 3540967,
+    "Stream": 116475031
+  },
+  {
+    "No": 5,
+    "Artist Name": "BTS",
+    "Listener": 170532,
+    "Stream": 65436710
+  },
+  {
+    "No": 6,
+    "Artist Name": "The Fray",
+    "Listener": 2290764,
+    "Stream": 53410987
+  },
+  {
+    "No": 7,
+    "Artist Name": "Bruno Mars",
+    "Listener": 1870267,
+    "Stream": 53197820
+  },
+  {
+    "No": 8,
+    "Artist Name": "Shawn Mendes",
+    "Listener": 557564,
+    "Stream": 19457832
+  },
+  {
+    "No": 9,
+    "Artist Name": "The Chainsmoker",
+    "Listener": 755820,
+    "Stream": 19070210
+  },
+  {
+    "No": 10,
+    "Artist Name": "Camila Cabello",
+    "Listener": 357546,
+    "Stream": 18276034
+  },
+  {
+    "No": 11,
+    "Artist Name": "Bigbang",
+    "Listener": 210297,
+    "Stream": 10625993
+  },
+  {
+    "No": 12,
+    "Artist Name": "Blackpink",
+    "Listener": 106729,
+    "Stream": 9234610
+  },
+  {
+    "No": 13,
+    "Artist Name": "IU",
+    "Listener": 91256,
+    "Stream": 7124562
+  },
+  {
+    "No": 14,
+    "Artist Name": "EXID",
+    "Listener": 71756,
+    "Stream": 6573907
+  },
+  {
+    "No": 15,
+    "Artist Name": "Zion.T",
+    "Listener": 34369,
+    "Stream": 1398702
+  },
+  {
+    "No": 16,
+    "Artist Name": "Akdong Musician",
+    "Listener": 26913,
+    "Stream": 726549
+  },
+  {
+    "No": 17,
+    "Artist Name": "Bolbbalgan4",
+    "Listener": 16824,
+    "Stream": 480599
+  }
+]

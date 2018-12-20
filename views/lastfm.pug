@@ -14,7 +14,7 @@ block body
 					span.icon-bar
 					span.icon-bar
 					span.icon-bar
-				a.navbar-brand(href='#') Bootstrap theme
+				a.navbar-brand(href='#') MusicGO
 			#navbar.navbar-collapse.collapse
 				ul.nav.navbar-nav
 					li
@@ -44,9 +44,8 @@ block body
 		.page-header
 			h1 Get Full Charts (JSON Files)
 		p
-			button.btn.btn-lg.btn-primary(type='button') Song Chart
-			button.btn.btn-lg.btn-info(type='button') Artist Chart
-			button.btn.btn-lg.btn-success(type='button') Album Chart
+			a.btn.btn-lg.btn-primary(type='button' href="/charts/lastfm/lastfm_song") Song Chart
+			a.btn.btn-lg.btn-info(type='button' href="/charts/lastfm/lastfm_artist") Artist Chart
 
 		.page-header
 			h1 Sneakpeak of charts
@@ -54,4 +53,4 @@ block body
 			.col-md-6
 				+table(["#","Artist Name","Listener","Streams"],[["1","Blackpink","14.221.793","59.260.389"],["2","Zion.T","469.759","1.293.880"],["3","Taylor Swift","22.229.171","85.667.321"]])
 			.col-md-6
-				+table(["#","Song Name","Artist Name","Streams"],[["1","Bang Bang Bang","Bigbang","503.450"],["2","Paradise","Coldplay","8.960.320"],["3","Payphone","Maroon 5","3.050.210"]])
+				+table(["#","Song Name","Artist Name","Listener"],[["1","Bang Bang Bang","Bigbang","44364"],["2","Viva la Vida","Coldplay","1.621.646"],["3","Palette","IU","20.259"]])
