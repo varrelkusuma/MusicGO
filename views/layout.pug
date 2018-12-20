@@ -4,13 +4,16 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='theme', href='/style/theme.css')
     link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
     link(rel='shortcut icon', href='//cdn2.auth0.com/styleguide/latest/lib/logos/img/favicon.png')
+    link(rel='logo', href='/pict/logo.png')
 
   body
     nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
       .w3-bar-item.w3-text-grey MusicGO
       a(href="/").w3-bar-item.w3-button Home
+      a(href="/about").w3-bar-item.w3-button About
       if locals.user
         a(href="/user" ).w3-bar-item.w3-button Profile
         a(id="qsLogoutBtn" href="/logout").w3-bar-item.w3-button Log Out

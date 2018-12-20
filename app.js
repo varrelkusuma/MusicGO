@@ -1,4 +1,5 @@
 var express = require('express');
+
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -55,6 +56,7 @@ app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(cookieParser());
+app.use(express.static('resources'));
 
 // config express-session
 var sess = {
